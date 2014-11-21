@@ -1,9 +1,12 @@
 require "formula"
 
+HOMEBREW_PT_VERSION='1.8.1'
 class Toever < Formula
   homepage "https://github.com/ngc224/toever"
-  url "https://pypi.python.org/packages/source/t/toever/toever-1.8.1.tar.gz"
+  url "https://pypi.python.org/packages/source/t/toever/toever-1.8.1.tar.gz", :tag => "v#{VERSION}"
+  version VERSION
   sha1 "f48da081a9082ac13e9764e4b539210757bcad0e"
+  head "https://github.com/ngc224/toever.git", :branch => "master"
 
   resource "evernote" do
     url "https://pypi.python.org/packages/source/e/evernote/evernote-1.25.0.tar.gz"
@@ -33,7 +36,6 @@ class Toever < Formula
 
     system "python", "setup.py", "install", "--prefix=#{prefix}"
 
-    # These are now rolled into 1.6 and cause linking conflicts
     rm Dir["#{bin}/easy_install*"]
     rm "#{lib}/python2.7/site-packages/site.py"
     rm Dir["#{lib}/python2.7/site-packages/*.pth"]
