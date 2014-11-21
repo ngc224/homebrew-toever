@@ -1,12 +1,9 @@
 require "formula"
 
-HOMEBREW_PT_VERSION='1.8.1'
 class Toever < Formula
-  homepage "https://github.com/ngc224/toever"
-  url "https://github.com/ngc224/toever.git", :tag => "v#{VERSION}"
-  version VERSION
-  sha1 "7860fb241a1f52e94ccf1b3d5e774dd13aba99ca"
-  head "https://github.com/ngc224/toever.git", :branch => "master"
+  homepage ""
+  url "https://pypi.python.org/packages/source/t/toever/toever-1.8.1.tar.gz"
+  sha1 "f48da081a9082ac13e9764e4b539210757bcad0e"
 
   resource "evernote" do
     url "https://pypi.python.org/packages/source/e/evernote/evernote-1.25.0.tar.gz"
