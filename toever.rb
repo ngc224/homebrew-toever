@@ -2,8 +2,8 @@ require "formula"
 
 class Toever < Formula
   homepage "https://github.com/ngc224/toever/"
-  url "https://pypi.python.org/packages/source/t/toever/toever-1.8.7.tar.gz"
-  sha1 "b7d336c2b8ef57be4fd087bd1fb5b690cc312515"
+  url "https://pypi.python.org/packages/source/t/toever/toever-1.8.8.tar.gz"
+  sha1 "71845fac9afb24e1408d736a855fc36c152e6959"
 
   resource "evernote" do
     url "https://pypi.python.org/packages/source/e/evernote/evernote-1.25.0.tar.gz"
@@ -13,6 +13,11 @@ class Toever < Formula
   resource "clint" do
     url "https://pypi.python.org/packages/source/c/clint/clint-0.4.1.tar.gz"
     sha1 "38f026413d4240e5fc97f140529462603cd3686b"
+  end
+
+  resource "chardet" do
+    url "https://pypi.python.org/packages/source/c/chardet/chardet-2.3.0.tar.gz"
+    sha1 "50af8f8771ecbeb7a22567129c6c281b8bec3b1c"
   end
 
   resource "keyring" do
@@ -26,7 +31,7 @@ class Toever < Formula
     ENV.prepend_create_path "PYTHONPATH", prefix+"lib/python2.7/site-packages"
     install_args = [ "setup.py", "install", "--prefix=#{libexec}" ]
 
-    res = %w[evernote clint keyring]
+    res = %w[evernote clint chardet keyring]
     res.each do |r|
       resource(r).stage { system "python", *install_args }
     end
