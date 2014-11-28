@@ -2,8 +2,8 @@ require "formula"
 
 class Toever < Formula
   homepage "https://github.com/ngc224/toever/"
-  url "https://pypi.python.org/packages/source/t/toever/toever-1.8.8.tar.gz"
-  sha1 "71845fac9afb24e1408d736a855fc36c152e6959"
+  url "https://pypi.python.org/packages/source/t/toever/toever-1.8.9.tar.gz"
+  sha1 "3e8caa55a084db93834dd5c364aca046218cb63b"
 
   resource "evernote" do
     url "https://pypi.python.org/packages/source/e/evernote/evernote-1.25.0.tar.gz"
