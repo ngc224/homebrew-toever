@@ -1,28 +1,28 @@
 require "formula"
 
 class Toever < Formula
-  homepage "https://github.com/ngc224/toever/"
+  homepage "https://github.com/nissy/toever/"
   url "https://pypi.python.org/packages/source/t/toever/toever-1.9.6.tar.gz"
-  sha1 "a1e41e92361121cca64fb79e0c5af971056a3367"
+  sha256 "70af0119d3abe61f273dc41aa7f86c4be6170f75678d3a7e662dc0bab26f16ea"
 
   resource "evernote" do
     url "https://pypi.python.org/packages/source/e/evernote/evernote-1.25.0.tar.gz"
-    sha1 "48b8077cce90a4001b0cf969e86d13e2c3de7916"
+    sha256 "4d801dde4c300931996f4b93ba4a41ab280048a80a7e598800a38c789d7994d3"
   end
 
   resource "clint" do
     url "https://pypi.python.org/packages/source/c/clint/clint-0.4.1.tar.gz"
-    sha1 "38f026413d4240e5fc97f140529462603cd3686b"
+    sha256 "3a9e7ba7ceaa10276bcfe85110a04633813344406ec6181063cd79210b2804a8"
   end
 
   resource "chardet" do
     url "https://pypi.python.org/packages/source/c/chardet/chardet-2.3.0.tar.gz"
-    sha1 "50af8f8771ecbeb7a22567129c6c281b8bec3b1c"
+    sha256 "e53e38b3a4afe6d1132de62b7400a4ac363452dc5dfcf8d88e8e0cce663c68aa"
   end
 
   resource "keyring" do
     url "https://pypi.python.org/packages/source/k/keyring/keyring-4.0.zip"
-    sha1 "45d6d052dda9ba5ed072e29abf88b1b473cb38c4"
+    sha256 "ea93c3cd9666c648263df4daadc5f34aeb27415dbf8e4d76579a8a737f1741cf"
   end
 
   def install
